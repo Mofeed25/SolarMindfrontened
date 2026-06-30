@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { getToken } from "@/lib/auth";
+// التعديل للمسار النسبي (خروج خطوة واحدة للأعلى للدخول لمجلد lib)
+import { getToken } from "../lib/auth";
 import { useRouter } from "next/navigation";
 
 export default function ProtectedRoute({ children }: any) {
