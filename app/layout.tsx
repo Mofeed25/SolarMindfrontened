@@ -1,4 +1,4 @@
-import "../styles/globals.css"; // استدعاء التنسيقات من جذر المشروع
+import "../styles/globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
