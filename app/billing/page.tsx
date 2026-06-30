@@ -1,6 +1,7 @@
 "use client";
 
-import { getPlan, setPlan } from "@/lib/billing";
+// تعديل الاستدعاء إلى مسار نسبي للتوافق مع Netlify Webpack
+import { getPlan, setPlan } from "../lib/billing";
 
 export default function Billing() {
 
