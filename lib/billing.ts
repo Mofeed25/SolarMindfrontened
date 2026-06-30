@@ -1,9 +1,14 @@
 export function getPlan() {
-    return localStorage.getItem("plan") || "free";
+    if (typeof window !== "undefined") {
+        return localStorage.getItem("plan") || "free";
+    }
+    return "free"; // القيمة الافتراضية أثناء البناء على السيرفر
 }
 
 export function setPlan(plan: string) {
-    localStorage.setItem("plan", plan);
+    if (typeof window !== "undefined") {
+        localStorage.setItem("plan", plan);
+    }
 }
 
 export function isPro() {
