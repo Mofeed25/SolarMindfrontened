@@ -1,6 +1,6 @@
 "use client";
 
-import { setToken } from "@/lib/auth";
+import { setToken } from "../../lib/auth";
 import { useRouter } from "next/navigation";
 
 export default function Login() {
