@@ -20,10 +20,10 @@ export default function ProtectedRoute({ children }: any) {
 
     return (
         <div className="flex w-full min-h-screen bg-[#0B192C]">
-            {/* القائمة الجانبية ثابتة في مكانها الحقيقي */}
+            {/* القائمة الجانبية عمودية وثابتة */}
             <Sidebar /> 
             
-            {/* محتوى الصفحة يأخذ بقية المساحة بمرونة كاملة */}
+            {/* المحتوى يمتد بجانبها بمرونة */}
             <div className="flex-1 p-8 text-white">
                 {children}
             </div>
