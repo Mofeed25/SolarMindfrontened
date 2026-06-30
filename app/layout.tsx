@@ -1,4 +1,4 @@
-import "./styles/globals.css";
+import "../styles/globals.css"; // 👈 الخروج خطوة للأعلى للوصول لمجلد styles الموجود في جذر المشروع
 
 export default function RootLayout({ children }: any) {
     return (
