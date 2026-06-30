@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ProtectedRoute from "@/components/ProtectedRoute";
-import KPI from "@/components/KPI";
-import { sendMessage } from "@/lib/api";
-import { getTenant } from "@/lib/tenant";
+// تعديل الاستدعاءات إلى مسارات نسبية للتوافق مع Netlify Webpack
+import ProtectedRoute from "../components/ProtectedRoute";
+import KPI from "../components/KPI";
+import { sendMessage } from "../lib/api";
+import { getTenant } from "../lib/tenant";
 
 export default function Dashboard() {
 
