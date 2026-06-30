@@ -20,7 +20,7 @@ export default function ProtectedRoute({ children }: any) {
     return (
         <div className="flex min-h-screen w-full bg-[#0B192C]">
             
-            {/* القائمة الجانبية العمودية تظهر هنا فقط داخل الصفحات المحمية */}
+            {/* القائمة الجانبية العمودية المستقرة والمحميّة */}
             <aside className="w-64 bg-[#0F2A4A] p-6 flex flex-col border-l border-gray-800 shrink-0 min-h-screen">
                 <h1 className="text-[#00D4FF] text-xl font-bold mb-8 tracking-wide">
                     SolarMind AI
@@ -33,7 +33,7 @@ export default function ProtectedRoute({ children }: any) {
                     <a href="/chat" className="flex items-center gap-3 py-2.5 px-4 rounded transition duration-200 hover:bg-[#1E3E62] text-white">
                         <span className="text-base">🤖</span> AI Chat
                     </a>
-                    <a href="/analytics" className="flex items-center gap-3 py-2.5 px-4 rounded transition duration-200 hover:bg-[#1E3E62] text-white">
+                    <a href="/dashboard" className="flex items-center gap-3 py-2.5 px-4 rounded transition duration-200 hover:bg-[#1E3E62] text-white">
                         <span className="text-base">📈</span> Analytics
                     </a>
                     <a href="/billing" className="flex items-center gap-3 py-2.5 px-4 rounded transition duration-200 hover:bg-[#1E3E62] text-white">
@@ -45,7 +45,7 @@ export default function ProtectedRoute({ children }: any) {
                 </nav>
             </aside>
 
-            {/* محتوى الصفحة يمتد هنا على اليسار بكامل الحرية */}
+            {/* المحتوى الرئيسي الممتد يساراً */}
             <main className="flex-1 p-8 overflow-y-auto">
                 {children}
             </main>
