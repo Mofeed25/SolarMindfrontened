@@ -1,11 +1,18 @@
 export function setToken(token: string) {
-    localStorage.setItem("token", token);
+    if (typeof window !== "undefined") {
+        localStorage.setItem("token", token);
+    }
 }
 
 export function getToken() {
-    return localStorage.getItem("token");
+    if (typeof window !== "undefined") {
+        return localStorage.getItem("token");
+    }
+    return null; // القيمة الافتراضية أثناء البناء على السيرفر
 }
 
 export function logout() {
-    localStorage.removeItem("token");
+    if (typeof window !== "undefined") {
+        localStorage.removeItem("token");
+    }
 }
