@@ -1,4 +1,4 @@
-import "../styles/globals.css"; // 👈 استدعاء التنسيقات من جذر المشروع
+import "../styles/globals.css"; // استدعاء التنسيقات من جذر المشروع
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* حاوية مرنة ممتدة بكامل الشاشة لتوزيع الـ Sidebar والمحتوى أفقياً */}
                 <div className="flex min-h-screen w-full">
                     
-                    {/* القائمة الجانبية العمودية الثابتة */}
+                    {/* القائمة الجانبية العمودية الثابتة - المصدر الوحيد في الموقع */}
                     <aside className="w-64 bg-[#0F2A4A] p-6 flex flex-col border-l border-gray-800 shrink-0 min-h-screen">
                         <h1 className="text-[#00D4FF] text-xl font-bold mb-8 tracking-wide">
                             SolarMind AI
