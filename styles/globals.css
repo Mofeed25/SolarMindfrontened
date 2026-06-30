@@ -1,3 +1,9 @@
+/* 1. استدعاء مكتبات Tailwind الأساسية (بدونها لن يعمل أي كلاس تنسيق في الموقع) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. التنسيقات الخاصة بك التي كتبتها سابقاً */
 body {
     background: #0B1220;
     color: white;
